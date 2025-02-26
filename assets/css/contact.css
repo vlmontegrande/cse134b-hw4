@@ -196,6 +196,10 @@ button:hover {
     transform: scale(1.1);
 }
 
+#error-output {
+    color: red;
+}
+
 address {
     width: 40%;
     color: var(--primary-color, brown);
