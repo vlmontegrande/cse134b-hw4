@@ -27,7 +27,7 @@
         <hr>
 
         <main>
-            <form>
+            <form method="GET" action="https://httpbin.org/get">
                 <fieldset>
                         <legend>Contact</legend>
                 
@@ -39,8 +39,13 @@
 
                         <label for="message">Message*:</label>
                         <textarea id="message" name="message" rows="4" required></textarea>
+
+                        <input id="possible_bot" name="possible_bot" value="true" hidden>
                     
                         <button type="submit">Submit</button>
+
+                        <output id="error-output">Test error</output>
+                        <output id="info-output">Test info</output>
                 </fieldset>
               </form>
               <address>
