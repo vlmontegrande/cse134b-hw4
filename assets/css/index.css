@@ -141,6 +141,7 @@ main div {
 }
 
 #image-container {
+    max-height: calc(100vh - var(--header-footer-height) * 2);
     display: flex;
     justify-content: center;
     border-radius: 2rem;

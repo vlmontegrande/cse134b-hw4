@@ -241,6 +241,7 @@ address a:hover {
     form, address {
         width: 100%;
         box-sizing: border-box;
+        margin-bottom: 2rem;
     }
 
     address {
@@ -269,14 +270,29 @@ address a:hover {
     }
 
     form, address {
-        width: 100%;
         box-sizing: border-box;
+        margin-bottom: 2rem;
+    }
+
+    form {
+        min-width: 100%;
     }
 
     address {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    legend, address h1 {
+        font-size: 32px;
+    }
+
+    footer a, footer p small {
+        font-size: 12px;
     }
 }
